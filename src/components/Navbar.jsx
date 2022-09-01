@@ -34,7 +34,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <NavDrawer showMenu={showMenu} />
+        <NavDrawer showMenu={showMenu} onClose={() => setShowMenu(false)} />
       </div>
     </nav>
   );
