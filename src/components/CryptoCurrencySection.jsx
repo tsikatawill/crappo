@@ -89,7 +89,7 @@ const CryptoCard = ({
       variants={AnimateDownV()}
       className={`crypto-card ${
         picked ? 'bg-secondary duration-700 text-white' : 'bg-white'
-      } rounded-lg min-h-96 py-10 px-6 text-center space-y-5`}
+      } rounded-lg min-h-96 py-10 px-6 text-center space-y-5 shadow-md shadow-slate-300`}
       onClick={onSelect}
     >
       <motion.img
