@@ -1,8 +1,11 @@
 import CryptoCurrencySection from './components/CryptoCurrencySection';
 import DemographicsSection from './components/DemographicsSection';
+import FeaturesSection from './components/FeaturesSection';
+import Footer from './components/Footer';
 import HashCalculatorSection from './components/HashCalculatorSection';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
+import NewsletterSection from './components/NewsletterSection';
 import WhySection from './components/WhySection';
 
 export default function App() {
@@ -11,12 +14,16 @@ export default function App() {
       <header>
         <Navbar />
         <Hero />
+      </header>
+      <main>
         <DemographicsSection />
         <WhySection />
         <HashCalculatorSection />
         <CryptoCurrencySection />
-        <div className="space h-96"></div>
-      </header>
+        <FeaturesSection />
+        <NewsletterSection />
+      </main>
+      <Footer />
     </>
   );
 }
