@@ -49,7 +49,7 @@ export default function Hero() {
             variants={AnimateDownV(0.8, -30)}
             initial="initial"
             whileInView="animate"
-            className="btn w-fit flex items-center gap-5 cursor-pointer "
+            className="btn w-fit flex items-center gap-5 cursor-pointer text-sm"
           >
             <p>Try For FREE</p>
 
