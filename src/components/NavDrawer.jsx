@@ -1,6 +1,7 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { NavbarDrawerV } from "../variants";
-import { Navlink } from "./Navbar";
+import { AnimatePresence, motion } from 'framer-motion';
+
+import { NavbarDrawerV } from '../variants';
+import { Navlink } from './Navbar';
 
 export default function NavDrawer({ showMenu, onClose }) {
   return (
@@ -31,5 +32,5 @@ export default function NavDrawer({ showMenu, onClose }) {
 }
 
 NavDrawer.defaultProps = {
-  showMenu: false,
+  showMenu: false
 };
