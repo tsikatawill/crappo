@@ -71,6 +71,7 @@ export default function Hero() {
             whileInView="animate"
             src={HeroImg}
             alt="hero-img.png"
+            className="w-full lg:w-[80%]"
           />
         </div>
       </div>
