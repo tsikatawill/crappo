@@ -53,7 +53,7 @@ export default function CryptoCurrencySection() {
         <motion.div
           variants={StaggerContainer}
           initial="initial"
-          animate="animate"
+          whileInView="animate"
           className="crypto-cards grid grid-cols-1 md:grid-cols-3 gap-10 text-black max-w-screen-lg mx-auto"
         >
           {CryptoItems.map((item, index) => (
