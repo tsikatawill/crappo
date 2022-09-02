@@ -1,8 +1,8 @@
-import { useState } from "react";
-import Logo from "../images/logo.svg";
-import Toggle from "../images/menuToggle.svg";
-import CloseIcon from "../images/closeBtn.svg";
-import NavDrawer from "./NavDrawer";
+import { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+
+import Logo from '../images/logo.svg';
+import NavDrawer from './NavDrawer';
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -11,15 +11,15 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container flex justify-between py-3 items-center">
         <img src={Logo} alt="logo.svg" className="cursor-pointer" />
-        <img
-          src={showMenu ? CloseIcon : Toggle}
-          width="30px"
+
+        <button
           className={`nav-toggle inline-flex md:hidden ease-in ${
-            showMenu && "fixed z-50 right-5 top-5"
+            showMenu && 'fixed z-50 right-5 top-5'
           }`}
-          alt="toggle"
           onClick={() => setShowMenu(!showMenu)}
-        />
+        >
+          {showMenu ? <FaTimes /> : <FaBars />}
+        </button>
 
         <div className="nav-menu hidden md:flex gap-5 items-center">
           <Navlink text="Products" />
@@ -50,6 +50,6 @@ export const Navlink = ({ text, link }) => (
 );
 
 Navlink.defaultProps = {
-  text: "Nav link",
-  href: "/#",
+  text: 'Nav link',
+  href: '/#'
 };
