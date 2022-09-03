@@ -45,7 +45,7 @@ export default function CryptoCurrencySection() {
           variants={ScaleUpV}
           initial="initial"
           whileInView="animate"
-          className="capitalize text-center font-semibold text-lg"
+          className="capitalize text-center font-semibold text-2xl"
         >
           Trade secureley and market the high growth crypto currencies
         </motion.h2>
