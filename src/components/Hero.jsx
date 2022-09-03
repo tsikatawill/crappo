@@ -2,12 +2,14 @@ import { motion } from 'framer-motion';
 import { FaChevronRight } from 'react-icons/fa';
 
 import HeroImg from '../images/hero-img.png';
+import Overlay1 from '../images/hero-ribbon-1.png';
+import Overlay2 from '../images/hero-ribbon-2.png';
 import { AnimateDownV, AnimateRightV, AnimateUpV, ScaleUpV } from '../variants';
 
 export default function Hero() {
   return (
     <div className="hero">
-      <div className="container grid gap-10 md:grid-cols-2 items-center py-10">
+      <div className="container grid gap-10 md:grid-cols-2 items-center py-10 relative">
         <div className="text-wrapper max-w-sm mx-auto md:max-w-full md:mx-0">
           <motion.div
             variants={AnimateDownV(0.5, -50)}
@@ -72,6 +74,19 @@ export default function Hero() {
             src={HeroImg}
             alt="hero-img.png"
             className="w-full lg:w-[80%]"
+          />
+        </div>
+
+        <div className="overlay hidden md:block">
+          <img
+            src={Overlay1}
+            className="absolute top-1/2 w-[80%] h-[70%]"
+            alt="overlay1"
+          />
+          <img
+            src={Overlay2}
+            className="absolute top-[80%] w-[50%] h-[30%] right-20"
+            alt="overlay1"
           />
         </div>
       </div>
