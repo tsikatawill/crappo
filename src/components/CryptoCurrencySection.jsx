@@ -39,7 +39,7 @@ export default function CryptoCurrencySection() {
   };
 
   return (
-    <section className="crypto-section bg-slate-100 text-black relative before:bg-slate-100 before:block before:w-full before:-top-24 before:-z-10 before:h-32 before:absolute">
+    <section className="crypto-section bg-slate-100 text-black">
       <div className="container py-10 space-y-10">
         <motion.h2
           variants={ScaleUpV}
