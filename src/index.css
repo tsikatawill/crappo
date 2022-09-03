@@ -4,8 +4,7 @@
 @tailwind utilities;
 
 /* Google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&display=swap');
 
 :root {
   --primary: #0d0d2b;
@@ -13,7 +12,7 @@
 
 /* General styles */
 body {
-  font-family: "Oxanium", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Oxanium', Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--primary);
   color: white;
   overflow-x: hidden;
@@ -25,4 +24,12 @@ body {
 
 .btn {
   @apply bg-blue-600 rounded-full text-white px-3 py-1;
+}
+
+.newsletter-section {
+  background: url(./images/newsletter-bg.png) center center/cover no-repeat;
+}
+
+.newsletter-section .newsletter-card {
+  background: url(./images/newsletter-box.png) center center/cover no-repeat;
 }
