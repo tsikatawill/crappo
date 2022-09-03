@@ -11,7 +11,7 @@ export default function HashCalculatorSection() {
         whileInView="animate"
         className="container section-head text-center mb-5 space-y-3"
       >
-        <h2 className="font-semibold text-2xl">
+        <h2 className="font-semibold text-2xl capitalize">
           How much can you earn with us{' '}
         </h2>
         <p className="text-xs md:text-sm">
