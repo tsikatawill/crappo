@@ -9,7 +9,7 @@ export default function HashCalculatorSection() {
         variants={AnimateUpV}
         initial="initial"
         whileInView="animate"
-        className="section-head text-center mb-5 space-y-3"
+        className="container section-head text-center mb-5 space-y-3"
       >
         <h2 className="font-semibold text-2xl">
           How much can you earn with us{' '}
@@ -21,7 +21,7 @@ export default function HashCalculatorSection() {
       </motion.div>
 
       <div
-        className="pb-10"
+        className="pb-10 container"
         style={{
           background:
             'linear-gradient(to bottom, #0D0D2B 50%, rgb(241 245 249) 50%)'
@@ -40,7 +40,7 @@ export default function HashCalculatorSection() {
               className="border-b-2 border-slate-300 focus:outline-none text-black py-2 flex-grow"
             />
 
-            <select className="bg-slate-300 text-black w-32 p-2">
+            <select className="bg-slate-300 text-black w-full md:w-32 p-2">
               <option disabled>Select unit...</option>
               <option>TH/s</option>
               <option>H/s</option>
