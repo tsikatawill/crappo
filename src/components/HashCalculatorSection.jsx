@@ -1,36 +1,43 @@
-import { motion } from "framer-motion";
-import { AnimateUpV, ScaleUpV } from "../variants";
+import { motion } from 'framer-motion';
+
+import { AnimateUpV, ScaleUpV } from '../variants';
 
 export default function HashCalculatorSection() {
   return (
-    <section className="hash-calculator">
-      <div className="container py-10">
-        <motion.div
-          variants={AnimateUpV}
-          initial="initial"
-          whileInView="animate"
-          className="section-head text-center mb-5 space-y-3"
-        >
-          <h2 className="font-semibold text-lg">
-            How much can you earn with us{" "}
-          </h2>
-          <p className="text-xs md:text-sm">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis,
-            esse.
-          </p>
-        </motion.div>
+    <section className="hash-calculator ">
+      <motion.div
+        variants={AnimateUpV}
+        initial="initial"
+        whileInView="animate"
+        className="section-head text-center mb-5 space-y-3"
+      >
+        <h2 className="font-semibold text-lg">
+          How much can you earn with us{' '}
+        </h2>
+        <p className="text-xs md:text-sm">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis,
+          esse.
+        </p>
+      </motion.div>
 
+      <div
+        className="pb-10"
+        style={{
+          background:
+            'linear-gradient(to bottom, #0D0D2B 50%, rgb(241 245 249) 50%)'
+        }}
+      >
         <motion.div
           variants={ScaleUpV}
           initial="initial"
           whileInView="animate"
-          className="calculator max-w-3xl mx-auto bg-white rounded-lg p-5 md:p-8 space-y-5 md:space-y-8 text-black shadow-md shadow-slate-200"
+          className="calculator max-w-3xl mx-auto bg-white rounded-lg p-5 md:p-8 space-y-5 md:space-y-8 text-black shadow-md shadow-slate-300"
         >
           <form className="flex flex-col md:flex-row gap-5">
             <input
               type="text"
               placeholder="Enter your hash rate"
-              className="border-b-2 border-slate-600 focus:outline-none text-black py-2 flex-grow"
+              className="border-b-2 border-slate-300 focus:outline-none text-black py-2 flex-grow"
             />
 
             <select className="bg-slate-300 text-black w-32 p-2">
